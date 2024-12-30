@@ -25,7 +25,7 @@ function nf90_open(path, mode, ncid, chunksize, cache_size, cache_nelems, &
      return
   end if
 
-  ! If the user specified chuck cache parameters, use them. But user
+  ! If the user specified chunk cache parameters, use them. But user
   ! may have specified one, two, or three settings. Leave the others
   ! unchanged.
   if (present(cache_size) .or. present(cache_nelems) .or. &
@@ -100,7 +100,7 @@ function nf90_create(path, cmode, ncid, initialsize, chunksize, cache_size, &
      return
   end if
 
-  ! If the user specified chuck cache parameters, use them. But user
+  ! If the user specified chunk cache parameters, use them. But user
   ! may have specified one, two, or three settings. Leave the others
   ! unchanged.
   if (present(cache_size) .or. present(cache_nelems) .or. &
